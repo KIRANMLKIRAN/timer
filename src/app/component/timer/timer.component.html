@@ -1,0 +1,16 @@
+
+<nz-card >
+<div nz-row>
+  <div nz-col nzSpan="12">
+    {{display }} Seconds
+  </div>
+  <div nz-col nzSpan="3">
+    <button nz-button [disabled]="disable" nzType="primary" (click)="startTimer()" >Start</button></div>
+  <div nz-col nzSpan="3">
+    <button nz-button [disabled]="pausedisable" nzType="primary" nzDanger (click)="pauseTimer()">Pause</button></div>
+  <div nz-col nzSpan="3">
+    <button nz-button  [disabled]="!disable" nzType="default" nzDanger (click)="stopTimer()">Stop</button></div>
+    <div nz-col nzSpan="3">
+      <button nz-button nzType="default" nzDanger (click)="resetTimer()">Clear</button></div>
+</div>
+</nz-card>
